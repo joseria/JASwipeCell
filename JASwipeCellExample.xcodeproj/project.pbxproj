@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F14707719E5F9D200F58977 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F14706F19E5F9D200F58977 /* ALView+PureLayout.m */; };
+		5F14707819E5F9D200F58977 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F14707119E5F9D200F58977 /* NSArray+PureLayout.m */; };
+		5F14707919E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F14707319E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m */; };
+		5F15973519B6555B00BC2C4E /* JAActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F15973419B6555B00BC2C4E /* JAActionButton.m */; };
+		5F7548A519874B6200F99E74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548A419874B6200F99E74 /* main.m */; };
+		5F7548A819874B6200F99E74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548A719874B6200F99E74 /* AppDelegate.m */; };
+		5F7548AE19874B6200F99E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7548AC19874B6200F99E74 /* Main.storyboard */; };
+		5F7548B019874B6200F99E74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7548AF19874B6200F99E74 /* Images.xcassets */; };
+		5F7548C719874B9B00F99E74 /* JASwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548C619874B9B00F99E74 /* JASwipeCell.m */; };
+		5F7548CB19875D1900F99E74 /* JATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548CA19875D1900F99E74 /* JATableViewCell.m */; };
+		5F7548CE19875F3C00F99E74 /* JATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548CD19875F3C00F99E74 /* JATableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F7548B619874B6200F99E74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F75489719874B6200F99E74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F75489E19874B6200F99E74;
+			remoteInfo = JASwipeCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F14706E19E5F9D200F58977 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		5F14706F19E5F9D200F58977 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		5F14707019E5F9D200F58977 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		5F14707119E5F9D200F58977 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		5F14707219E5F9D200F58977 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		5F14707319E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		5F14707419E5F9D200F58977 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		5F14707519E5F9D200F58977 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		5F14707619E5F9D200F58977 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		5F15973319B6555B00BC2C4E /* JAActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAActionButton.h; sourceTree = "<group>"; };
+		5F15973419B6555B00BC2C4E /* JAActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAActionButton.m; sourceTree = "<group>"; };
+		5F75489F19874B6200F99E74 /* JASwipeCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = JASwipeCellExample.app; path = "/Users/jalvarez1/Development/playground/JASwipeCell/build/Debug-iphoneos/JASwipeCellExample.app"; sourceTree = "<absolute>"; };
+		5F7548A319874B6200F99E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7548A419874B6200F99E74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F7548A619874B6200F99E74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F7548A719874B6200F99E74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F7548AD19874B6200F99E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F7548AF19874B6200F99E74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5F7548C519874B9B00F99E74 /* JASwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASwipeCell.h; sourceTree = "<group>"; };
+		5F7548C619874B9B00F99E74 /* JASwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASwipeCell.m; sourceTree = "<group>"; };
+		5F7548C919875D1900F99E74 /* JATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATableViewCell.h; sourceTree = "<group>"; };
+		5F7548CA19875D1900F99E74 /* JATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewCell.m; sourceTree = "<group>"; };
+		5F7548CC19875F3C00F99E74 /* JATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATableViewController.h; sourceTree = "<group>"; };
+		5F7548CD19875F3C00F99E74 /* JATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewController.m; sourceTree = "<group>"; };
+		5F92FEB219E61EDA00EF593B /* JASwipeCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JASwipeCellExampleTests.xctest; path = "/Users/jalvarez1/Development/playground/JASwipeCell/build/Debug-iphoneos/JASwipeCellExampleTests.xctest"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F75489C19874B6200F99E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7548B219874B6200F99E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F14706D19E5F9CB00F58977 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5F14706E19E5F9D200F58977 /* ALView+PureLayout.h */,
+				5F14706F19E5F9D200F58977 /* ALView+PureLayout.m */,
+				5F14707019E5F9D200F58977 /* NSArray+PureLayout.h */,
+				5F14707119E5F9D200F58977 /* NSArray+PureLayout.m */,
+				5F14707219E5F9D200F58977 /* NSLayoutConstraint+PureLayout.h */,
+				5F14707319E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m */,
+				5F14707419E5F9D200F58977 /* PureLayout.h */,
+				5F14707519E5F9D200F58977 /* PureLayout+Internal.h */,
+				5F14707619E5F9D200F58977 /* PureLayoutDefines.h */,
+			);
+			name = PureLayout;
+			sourceTree = "<group>";
+		};
+		5F75489619874B6200F99E74 = {
+			isa = PBXGroup;
+			children = (
+				5F7548A119874B6200F99E74 /* JASwipeCellExample */,
+				96DE50230DDF45EBADD5E5A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F7548A119874B6200F99E74 /* JASwipeCellExample */ = {
+			isa = PBXGroup;
+			children = (
+				5FBCF64119E5AD2500237EAA /* JASwipeCell */,
+				5F14706D19E5F9CB00F58977 /* PureLayout */,
+				5F7548A619874B6200F99E74 /* AppDelegate.h */,
+				5F7548A719874B6200F99E74 /* AppDelegate.m */,
+				5F7548C919875D1900F99E74 /* JATableViewCell.h */,
+				5F7548CA19875D1900F99E74 /* JATableViewCell.m */,
+				5F7548CC19875F3C00F99E74 /* JATableViewController.h */,
+				5F7548CD19875F3C00F99E74 /* JATableViewController.m */,
+				5F7548AC19874B6200F99E74 /* Main.storyboard */,
+				5F7548AF19874B6200F99E74 /* Images.xcassets */,
+				5F7548A219874B6200F99E74 /* Supporting Files */,
+			);
+			name = JASwipeCellExample;
+			path = JASwipeCell;
+			sourceTree = "<group>";
+		};
+		5F7548A219874B6200F99E74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F7548A319874B6200F99E74 /* Info.plist */,
+				5F7548A419874B6200F99E74 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FBCF64119E5AD2500237EAA /* JASwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F15973319B6555B00BC2C4E /* JAActionButton.h */,
+				5F15973419B6555B00BC2C4E /* JAActionButton.m */,
+				5F7548C519874B9B00F99E74 /* JASwipeCell.h */,
+				5F7548C619874B9B00F99E74 /* JASwipeCell.m */,
+			);
+			name = JASwipeCell;
+			sourceTree = "<group>";
+		};
+		96DE50230DDF45EBADD5E5A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F75489E19874B6200F99E74 /* JASwipeCellExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F7548BF19874B6200F99E74 /* Build configuration list for PBXNativeTarget "JASwipeCellExample" */;
+			buildPhases = (
+				5F75489B19874B6200F99E74 /* Sources */,
+				5F75489C19874B6200F99E74 /* Frameworks */,
+				5F75489D19874B6200F99E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JASwipeCellExample;
+			productName = JASwipeCell;
+			productReference = 5F75489F19874B6200F99E74 /* JASwipeCellExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F7548B419874B6200F99E74 /* JASwipeCellExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F7548C219874B6200F99E74 /* Build configuration list for PBXNativeTarget "JASwipeCellExampleTests" */;
+			buildPhases = (
+				5F7548B119874B6200F99E74 /* Sources */,
+				5F7548B219874B6200F99E74 /* Frameworks */,
+				5F7548B319874B6200F99E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F7548B719874B6200F99E74 /* PBXTargetDependency */,
+			);
+			name = JASwipeCellExampleTests;
+			productName = JASwipeCellTests;
+			productReference = 5F92FEB219E61EDA00EF593B /* JASwipeCellExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F75489719874B6200F99E74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alvarez, Jose (MTV)";
+				TargetAttributes = {
+					5F75489E19874B6200F99E74 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = 7RS6PZH7K6;
+					};
+					5F7548B419874B6200F99E74 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 5F75489E19874B6200F99E74;
+					};
+				};
+			};
+			buildConfigurationList = 5F75489A19874B6200F99E74 /* Build configuration list for PBXProject "JASwipeCellExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F75489619874B6200F99E74;
+			productRefGroup = 5F75489619874B6200F99E74;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F75489E19874B6200F99E74 /* JASwipeCellExample */,
+				5F7548B419874B6200F99E74 /* JASwipeCellExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F75489D19874B6200F99E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7548AE19874B6200F99E74 /* Main.storyboard in Resources */,
+				5F7548B019874B6200F99E74 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7548B319874B6200F99E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F75489B19874B6200F99E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7548CB19875D1900F99E74 /* JATableViewCell.m in Sources */,
+				5F7548A819874B6200F99E74 /* AppDelegate.m in Sources */,
+				5F7548A519874B6200F99E74 /* main.m in Sources */,
+				5F14707719E5F9D200F58977 /* ALView+PureLayout.m in Sources */,
+				5F14707819E5F9D200F58977 /* NSArray+PureLayout.m in Sources */,
+				5F14707919E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				5F15973519B6555B00BC2C4E /* JAActionButton.m in Sources */,
+				5F7548CE19875F3C00F99E74 /* JATableViewController.m in Sources */,
+				5F7548C719874B9B00F99E74 /* JASwipeCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7548B119874B6200F99E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F7548B719874B6200F99E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F75489E19874B6200F99E74 /* JASwipeCellExample */;
+			targetProxy = 5F7548B619874B6200F99E74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F7548AC19874B6200F99E74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F7548AD19874B6200F99E74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F7548BD19874B6200F99E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F7548BE19874B6200F99E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F7548C019874B6200F99E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JASwipeCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = JASwipeCellExample;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		5F7548C119874B6200F99E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JASwipeCell/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = JASwipeCellExample;
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		5F7548C319874B6200F99E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JASwipeCell.app/JASwipeCell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = JASwipeCellExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		5F7548C419874B6200F99E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JASwipeCell.app/JASwipeCell";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = JASwipeCellExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F75489A19874B6200F99E74 /* Build configuration list for PBXProject "JASwipeCellExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7548BD19874B6200F99E74 /* Debug */,
+				5F7548BE19874B6200F99E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F7548BF19874B6200F99E74 /* Build configuration list for PBXNativeTarget "JASwipeCellExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7548C019874B6200F99E74 /* Debug */,
+				5F7548C119874B6200F99E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F7548C219874B6200F99E74 /* Build configuration list for PBXNativeTarget "JASwipeCellExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F7548C319874B6200F99E74 /* Debug */,
+				5F7548C419874B6200F99E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F75489719874B6200F99E74 /* Project object */;
+}
