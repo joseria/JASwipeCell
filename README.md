@@ -11,7 +11,10 @@ iOS 8 Mail Inspired. A UITableViewCell subclass that displays customizable left 
 * Each button will have a block handler that will execute when pressed.
 * The left/right most button will pin to the top container view as the user swipes all the way. This will also execute that button's action. 
 
-![image](http://i.imgur.com/Hf45Dlg.png)
+Example of the buttons revealing as you swipe left:
+![image](http://i.imgur.com/Kb85wMM.png)
+
+Example of the right most button pinning to the container view:
 ![image](http://i.imgur.com/fYl48fF.png)
 
 ##Usage
