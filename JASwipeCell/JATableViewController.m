@@ -62,7 +62,7 @@
                                           @"Swipe left - click More button",
                                           @"Swipe left - click Flag button",
                                           @"Swipe left - click Archive button",
-                                          @"Swipe right - click More button",
+                                          @"Swipe right - click Mark as unread button",
                                           @"Swipe right - click Delete button"]];
     
     [self.tableView reloadData];
