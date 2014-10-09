@@ -18,6 +18,9 @@
 		5F7548C719874B9B00F99E74 /* JASwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548C619874B9B00F99E74 /* JASwipeCell.m */; };
 		5F7548CB19875D1900F99E74 /* JATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548CA19875D1900F99E74 /* JATableViewCell.m */; };
 		5F7548CE19875F3C00F99E74 /* JATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548CD19875F3C00F99E74 /* JATableViewController.m */; };
+		5FC745F619E642BA00B50690 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC745F519E642BA00B50690 /* CoreGraphics.framework */; };
+		5FC745F819E642BF00B50690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC745F719E642BF00B50690 /* UIKit.framework */; };
+		5FC745FA19E642C600B50690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC745F919E642C600B50690 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +45,6 @@
 		5F14707619E5F9D200F58977 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 		5F15973319B6555B00BC2C4E /* JAActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAActionButton.h; sourceTree = "<group>"; };
 		5F15973419B6555B00BC2C4E /* JAActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAActionButton.m; sourceTree = "<group>"; };
-		5F75489F19874B6200F99E74 /* JASwipeCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = JASwipeCellExample.app; path = "/Users/jalvarez1/Development/playground/JASwipeCell/build/Debug-iphoneos/JASwipeCellExample.app"; sourceTree = "<absolute>"; };
 		5F7548A319874B6200F99E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F7548A419874B6200F99E74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F7548A619874B6200F99E74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +57,11 @@
 		5F7548CA19875D1900F99E74 /* JATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewCell.m; sourceTree = "<group>"; };
 		5F7548CC19875F3C00F99E74 /* JATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATableViewController.h; sourceTree = "<group>"; };
 		5F7548CD19875F3C00F99E74 /* JATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewController.m; sourceTree = "<group>"; };
-		5F92FEB219E61EDA00EF593B /* JASwipeCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JASwipeCellExampleTests.xctest; path = "/Users/jalvarez1/Development/playground/JASwipeCell/build/Debug-iphoneos/JASwipeCellExampleTests.xctest"; sourceTree = "<absolute>"; };
+		5FC745F119E6402600B50690 /* JASwipeCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JASwipeCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC745F219E6402600B50690 /* JASwipeCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JASwipeCellExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC745F519E642BA00B50690 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5FC745F719E642BF00B50690 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5FC745F919E642C600B50690 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC745FA19E642C600B50690 /* Foundation.framework in Frameworks */,
+				5FC745F819E642BF00B50690 /* UIKit.framework in Frameworks */,
+				5FC745F619E642BA00B50690 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +106,7 @@
 			children = (
 				5F7548A119874B6200F99E74 /* JASwipeCellExample */,
 				96DE50230DDF45EBADD5E5A0 /* Frameworks */,
+				5FC745FB19E642D900B50690 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +149,21 @@
 			name = JASwipeCell;
 			sourceTree = "<group>";
 		};
+		5FC745FB19E642D900B50690 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FC745F119E6402600B50690 /* JASwipeCellExample.app */,
+				5FC745F219E6402600B50690 /* JASwipeCellExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		96DE50230DDF45EBADD5E5A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5FC745F919E642C600B50690 /* Foundation.framework */,
+				5FC745F719E642BF00B50690 /* UIKit.framework */,
+				5FC745F519E642BA00B50690 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,7 +185,7 @@
 			);
 			name = JASwipeCellExample;
 			productName = JASwipeCell;
-			productReference = 5F75489F19874B6200F99E74 /* JASwipeCellExample.app */;
+			productReference = 5FC745F119E6402600B50690 /* JASwipeCellExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5F7548B419874B6200F99E74 /* JASwipeCellExampleTests */ = {
@@ -181,7 +203,7 @@
 			);
 			name = JASwipeCellExampleTests;
 			productName = JASwipeCellTests;
-			productReference = 5F92FEB219E61EDA00EF593B /* JASwipeCellExampleTests.xctest */;
+			productReference = 5FC745F219E6402600B50690 /* JASwipeCellExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
