@@ -13,11 +13,11 @@ iOS 8 Mail Inspired. A UITableViewCell subclass that displays customizable left 
 
 Example of the buttons revealing as you swipe left:
 
-![image](http://i.imgur.com/Kb85wMM.png)
+![image](http://i.imgur.com/GS2sQCE.png)
 
 Example of the right most button pinning to the container view:
 
-![image](http://i.imgur.com/fYl48fF.png)
+![image](http://i.imgur.com/B046Mrw.png)
 
 ##Usage
 
