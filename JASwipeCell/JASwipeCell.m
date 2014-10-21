@@ -334,7 +334,6 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
     switch (recognizer.state) {
         case UIGestureRecognizerStateBegan:
             self.startingPoint = self.topContentView.frame.origin;
-            NSLog(@"Starting point: %f", self.startingPoint.x);
             break;
         case UIGestureRecognizerStateChanged: {
             CGFloat currentX = [recognizer translationInView:self].x;
