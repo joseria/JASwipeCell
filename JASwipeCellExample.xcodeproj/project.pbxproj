@@ -7,20 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5F14707719E5F9D200F58977 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F14706F19E5F9D200F58977 /* ALView+PureLayout.m */; };
-		5F14707819E5F9D200F58977 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F14707119E5F9D200F58977 /* NSArray+PureLayout.m */; };
-		5F14707919E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F14707319E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m */; };
-		5F15973519B6555B00BC2C4E /* JAActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F15973419B6555B00BC2C4E /* JAActionButton.m */; };
-		5F7548A519874B6200F99E74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548A419874B6200F99E74 /* main.m */; };
-		5F7548A819874B6200F99E74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548A719874B6200F99E74 /* AppDelegate.m */; };
-		5F7548AE19874B6200F99E74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F7548AC19874B6200F99E74 /* Main.storyboard */; };
-		5F7548B019874B6200F99E74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F7548AF19874B6200F99E74 /* Images.xcassets */; };
-		5F7548C719874B9B00F99E74 /* JASwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548C619874B9B00F99E74 /* JASwipeCell.m */; };
-		5F7548CB19875D1900F99E74 /* JATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548CA19875D1900F99E74 /* JATableViewCell.m */; };
-		5F7548CE19875F3C00F99E74 /* JATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7548CD19875F3C00F99E74 /* JATableViewController.m */; };
 		5FC745F619E642BA00B50690 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC745F519E642BA00B50690 /* CoreGraphics.framework */; };
 		5FC745F819E642BF00B50690 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC745F719E642BF00B50690 /* UIKit.framework */; };
 		5FC745FA19E642C600B50690 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC745F919E642C600B50690 /* Foundation.framework */; };
+		5FF23A4619FB01E600968333 /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A2E19FB01E600968333 /* ALView+PureLayout.m */; };
+		5FF23A4719FB01E600968333 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A3019FB01E600968333 /* AppDelegate.m */; };
+		5FF23A4819FB01E600968333 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF23A3119FB01E600968333 /* Main.storyboard */; };
+		5FF23A4919FB01E600968333 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF23A3319FB01E600968333 /* Images.xcassets */; };
+		5FF23A4A19FB01E600968333 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5FF23A3419FB01E600968333 /* Info.plist */; };
+		5FF23A4D19FB01E600968333 /* JATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A3B19FB01E600968333 /* JATableViewCell.m */; };
+		5FF23A4E19FB01E600968333 /* JATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A3D19FB01E600968333 /* JATableViewController.m */; };
+		5FF23A4F19FB01E600968333 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A3E19FB01E600968333 /* main.m */; };
+		5FF23A5019FB01E600968333 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A4019FB01E600968333 /* NSArray+PureLayout.m */; };
+		5FF23A5119FB01E600968333 /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A4219FB01E600968333 /* NSLayoutConstraint+PureLayout.m */; };
+		5FF23A5819FB02BF00968333 /* JAActionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A5519FB02BF00968333 /* JAActionButton.m */; };
+		5FF23A5919FB02BF00968333 /* JASwipeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF23A5719FB02BF00968333 /* JASwipeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,34 +35,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F14706E19E5F9D200F58977 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
-		5F14706F19E5F9D200F58977 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
-		5F14707019E5F9D200F58977 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		5F14707119E5F9D200F58977 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		5F14707219E5F9D200F58977 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
-		5F14707319E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
-		5F14707419E5F9D200F58977 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
-		5F14707519E5F9D200F58977 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
-		5F14707619E5F9D200F58977 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
-		5F15973319B6555B00BC2C4E /* JAActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAActionButton.h; sourceTree = "<group>"; };
-		5F15973419B6555B00BC2C4E /* JAActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAActionButton.m; sourceTree = "<group>"; };
-		5F7548A319874B6200F99E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F7548A419874B6200F99E74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5F7548A619874B6200F99E74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5F7548A719874B6200F99E74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5F7548AD19874B6200F99E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5F7548AF19874B6200F99E74 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		5F7548C519874B9B00F99E74 /* JASwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASwipeCell.h; sourceTree = "<group>"; };
-		5F7548C619874B9B00F99E74 /* JASwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASwipeCell.m; sourceTree = "<group>"; };
-		5F7548C919875D1900F99E74 /* JATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATableViewCell.h; sourceTree = "<group>"; };
-		5F7548CA19875D1900F99E74 /* JATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewCell.m; sourceTree = "<group>"; };
-		5F7548CC19875F3C00F99E74 /* JATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATableViewController.h; sourceTree = "<group>"; };
-		5F7548CD19875F3C00F99E74 /* JATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewController.m; sourceTree = "<group>"; };
 		5FC745F119E6402600B50690 /* JASwipeCellExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JASwipeCellExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC745F219E6402600B50690 /* JASwipeCellExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JASwipeCellExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FC745F519E642BA00B50690 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5FC745F719E642BF00B50690 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5FC745F919E642C600B50690 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5FF23A2D19FB01E600968333 /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		5FF23A2E19FB01E600968333 /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		5FF23A2F19FB01E600968333 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5FF23A3019FB01E600968333 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5FF23A3219FB01E600968333 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FF23A3319FB01E600968333 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FF23A3419FB01E600968333 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF23A3A19FB01E600968333 /* JATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATableViewCell.h; sourceTree = "<group>"; };
+		5FF23A3B19FB01E600968333 /* JATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewCell.m; sourceTree = "<group>"; };
+		5FF23A3C19FB01E600968333 /* JATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JATableViewController.h; sourceTree = "<group>"; };
+		5FF23A3D19FB01E600968333 /* JATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JATableViewController.m; sourceTree = "<group>"; };
+		5FF23A3E19FB01E600968333 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FF23A3F19FB01E600968333 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		5FF23A4019FB01E600968333 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		5FF23A4119FB01E600968333 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		5FF23A4219FB01E600968333 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		5FF23A4319FB01E600968333 /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		5FF23A4419FB01E600968333 /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		5FF23A4519FB01E600968333 /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
+		5FF23A5419FB02BF00968333 /* JAActionButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAActionButton.h; sourceTree = "<group>"; };
+		5FF23A5519FB02BF00968333 /* JAActionButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAActionButton.m; sourceTree = "<group>"; };
+		5FF23A5619FB02BF00968333 /* JASwipeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JASwipeCell.h; sourceTree = "<group>"; };
+		5FF23A5719FB02BF00968333 /* JASwipeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JASwipeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,68 +86,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5F14706D19E5F9CB00F58977 /* PureLayout */ = {
-			isa = PBXGroup;
-			children = (
-				5F14706E19E5F9D200F58977 /* ALView+PureLayout.h */,
-				5F14706F19E5F9D200F58977 /* ALView+PureLayout.m */,
-				5F14707019E5F9D200F58977 /* NSArray+PureLayout.h */,
-				5F14707119E5F9D200F58977 /* NSArray+PureLayout.m */,
-				5F14707219E5F9D200F58977 /* NSLayoutConstraint+PureLayout.h */,
-				5F14707319E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m */,
-				5F14707419E5F9D200F58977 /* PureLayout.h */,
-				5F14707519E5F9D200F58977 /* PureLayout+Internal.h */,
-				5F14707619E5F9D200F58977 /* PureLayoutDefines.h */,
-			);
-			name = PureLayout;
-			sourceTree = "<group>";
-		};
 		5F75489619874B6200F99E74 = {
 			isa = PBXGroup;
 			children = (
-				5F7548A119874B6200F99E74 /* JASwipeCellExample */,
+				5FF23A2C19FB01E600968333 /* JASwipeCellExample */,
 				96DE50230DDF45EBADD5E5A0 /* Frameworks */,
 				5FC745FB19E642D900B50690 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		5F7548A119874B6200F99E74 /* JASwipeCellExample */ = {
-			isa = PBXGroup;
-			children = (
-				5FBCF64119E5AD2500237EAA /* JASwipeCell */,
-				5F14706D19E5F9CB00F58977 /* PureLayout */,
-				5F7548A619874B6200F99E74 /* AppDelegate.h */,
-				5F7548A719874B6200F99E74 /* AppDelegate.m */,
-				5F7548C919875D1900F99E74 /* JATableViewCell.h */,
-				5F7548CA19875D1900F99E74 /* JATableViewCell.m */,
-				5F7548CC19875F3C00F99E74 /* JATableViewController.h */,
-				5F7548CD19875F3C00F99E74 /* JATableViewController.m */,
-				5F7548AC19874B6200F99E74 /* Main.storyboard */,
-				5F7548AF19874B6200F99E74 /* Images.xcassets */,
-				5F7548A219874B6200F99E74 /* Supporting Files */,
-			);
-			name = JASwipeCellExample;
-			path = JASwipeCell;
-			sourceTree = "<group>";
-		};
-		5F7548A219874B6200F99E74 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5F7548A319874B6200F99E74 /* Info.plist */,
-				5F7548A419874B6200F99E74 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5FBCF64119E5AD2500237EAA /* JASwipeCell */ = {
-			isa = PBXGroup;
-			children = (
-				5F15973319B6555B00BC2C4E /* JAActionButton.h */,
-				5F15973419B6555B00BC2C4E /* JAActionButton.m */,
-				5F7548C519874B9B00F99E74 /* JASwipeCell.h */,
-				5F7548C619874B9B00F99E74 /* JASwipeCell.m */,
-			);
-			name = JASwipeCell;
 			sourceTree = "<group>";
 		};
 		5FC745FB19E642D900B50690 /* Products */ = {
@@ -157,6 +103,52 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		5FF23A2C19FB01E600968333 /* JASwipeCellExample */ = {
+			isa = PBXGroup;
+			children = (
+				5FF23A2F19FB01E600968333 /* AppDelegate.h */,
+				5FF23A3019FB01E600968333 /* AppDelegate.m */,
+				5FF23A3119FB01E600968333 /* Main.storyboard */,
+				5FF23A3319FB01E600968333 /* Images.xcassets */,
+				5FF23A3419FB01E600968333 /* Info.plist */,
+				5FF23A3A19FB01E600968333 /* JATableViewCell.h */,
+				5FF23A3B19FB01E600968333 /* JATableViewCell.m */,
+				5FF23A3C19FB01E600968333 /* JATableViewController.h */,
+				5FF23A3D19FB01E600968333 /* JATableViewController.m */,
+				5FF23A3E19FB01E600968333 /* main.m */,
+				5FF23A5319FB02BF00968333 /* JASwipeCell */,
+				5FF23A5219FB01F500968333 /* PureLayout */,
+			);
+			path = JASwipeCellExample;
+			sourceTree = "<group>";
+		};
+		5FF23A5219FB01F500968333 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				5FF23A2D19FB01E600968333 /* ALView+PureLayout.h */,
+				5FF23A2E19FB01E600968333 /* ALView+PureLayout.m */,
+				5FF23A3F19FB01E600968333 /* NSArray+PureLayout.h */,
+				5FF23A4019FB01E600968333 /* NSArray+PureLayout.m */,
+				5FF23A4119FB01E600968333 /* NSLayoutConstraint+PureLayout.h */,
+				5FF23A4219FB01E600968333 /* NSLayoutConstraint+PureLayout.m */,
+				5FF23A4319FB01E600968333 /* PureLayout+Internal.h */,
+				5FF23A4419FB01E600968333 /* PureLayout.h */,
+				5FF23A4519FB01E600968333 /* PureLayoutDefines.h */,
+			);
+			name = PureLayout;
+			sourceTree = "<group>";
+		};
+		5FF23A5319FB02BF00968333 /* JASwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				5FF23A5419FB02BF00968333 /* JAActionButton.h */,
+				5FF23A5519FB02BF00968333 /* JAActionButton.m */,
+				5FF23A5619FB02BF00968333 /* JASwipeCell.h */,
+				5FF23A5719FB02BF00968333 /* JASwipeCell.m */,
+			);
+			path = JASwipeCell;
+			sourceTree = SOURCE_ROOT;
 		};
 		96DE50230DDF45EBADD5E5A0 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -249,8 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F7548AE19874B6200F99E74 /* Main.storyboard in Resources */,
-				5F7548B019874B6200F99E74 /* Images.xcassets in Resources */,
+				5FF23A4819FB01E600968333 /* Main.storyboard in Resources */,
+				5FF23A4919FB01E600968333 /* Images.xcassets in Resources */,
+				5FF23A4A19FB01E600968333 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +261,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F7548CB19875D1900F99E74 /* JATableViewCell.m in Sources */,
-				5F7548A819874B6200F99E74 /* AppDelegate.m in Sources */,
-				5F7548A519874B6200F99E74 /* main.m in Sources */,
-				5F14707719E5F9D200F58977 /* ALView+PureLayout.m in Sources */,
-				5F14707819E5F9D200F58977 /* NSArray+PureLayout.m in Sources */,
-				5F14707919E5F9D200F58977 /* NSLayoutConstraint+PureLayout.m in Sources */,
-				5F15973519B6555B00BC2C4E /* JAActionButton.m in Sources */,
-				5F7548CE19875F3C00F99E74 /* JATableViewController.m in Sources */,
-				5F7548C719874B9B00F99E74 /* JASwipeCell.m in Sources */,
+				5FF23A5819FB02BF00968333 /* JAActionButton.m in Sources */,
+				5FF23A4D19FB01E600968333 /* JATableViewCell.m in Sources */,
+				5FF23A4719FB01E600968333 /* AppDelegate.m in Sources */,
+				5FF23A4619FB01E600968333 /* ALView+PureLayout.m in Sources */,
+				5FF23A5019FB01E600968333 /* NSArray+PureLayout.m in Sources */,
+				5FF23A5119FB01E600968333 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				5FF23A4E19FB01E600968333 /* JATableViewController.m in Sources */,
+				5FF23A5919FB02BF00968333 /* JASwipeCell.m in Sources */,
+				5FF23A4F19FB01E600968333 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,10 +291,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5F7548AC19874B6200F99E74 /* Main.storyboard */ = {
+		5FF23A3119FB01E600968333 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5F7548AD19874B6200F99E74 /* Base */,
+				5FF23A3219FB01E600968333 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -398,7 +391,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = JASwipeCell/Info.plist;
+				INFOPLIST_FILE = JASwipeCellExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = JASwipeCellExample;
@@ -417,7 +410,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = JASwipeCell/Info.plist;
+				INFOPLIST_FILE = JASwipeCellExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = JASwipeCellExample;
