@@ -120,7 +120,7 @@ In the project example, swiping a cell all the way to the left will trigger the 
 ```
 
 ##Example Project
-An example project is provided. It requires IOS8 and XCode 6.0 and can be run on device or simulator. This will work for any device size. 
+An example project is provided. It requires IOS7 and can be run on device or simulator. This will work for any device size. 
 
 ##Creator
 Jose Alvarez
