@@ -21,6 +21,14 @@ Example of the right most button pinning to the container view:
 
 ##Usage
 
+###Available via CocoaPods
+
+Add the following to your Podfile.
+
+pod 'JASwipeCell'
+
+Run pod install from your Terminal. This will install the necessary files. 
+
 ###Set up the cell
 
 First step is to subclass `JASwipeCell.h`. You have full control of the views rendered on this cell and they must be added as subviews to JASwipeCell's topContainerView. You can use a xib file or do this in code. The example provided is done in code using [PureLayout](https://github.com/smileyborg/PureLayout).
