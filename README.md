@@ -10,6 +10,7 @@ iOS 8 Mail Inspired. A UITableViewCell subclass that displays customizable left 
 * You can customize a button's title text and color.
 * Each button will have a block handler that will execute when pressed.
 * The left/right most button will pin to the top container view as the user swipes all the way. This will also execute that button's action. 
+* Supports IOS 7+
 
 Example of the buttons revealing as you swipe left:
 
