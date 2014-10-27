@@ -350,6 +350,10 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
             }
             
             if (self.swipingLeft) {
+                // Exit if we don't have any right buttons
+                if (self.rightButtons.count == 0 ){
+                    return;
+                }
                 [self hideLeftButtons];
                 [self showRightButtons];
                 
@@ -372,7 +376,11 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 }
             }
             // Swiping to the right
-            else {
+            else if (self.swipingRight) {
+                // Exit if we don't have any left buttons
+                if (self.leftButtons.count == 0) {
+                    return;
+                }
                 [self hideRightButtons];
                 [self showLeftButtons];
                 if ([self.delegate respondsToSelector:@selector(swipingRightForCell:)]) {
@@ -403,6 +411,10 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
             CGFloat newXOffset = 0.0;
             
             if (self.swipingLeft) {
+                // Exit if we don't have any right buttons
+                if (self.rightButtons.count == 0) {
+                    return;
+                }
                 // Complete the swipe to the left
                 if (fabs(currentX) > [self rightButtonsTotalWidth]) {
                     newXOffset = -self.topContentView.frame.size.width;
@@ -431,7 +443,11 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 }
             }
             // Swiping right
-            else {
+            else if (self.swipingRight) {
+                // Exit if we don't have any left buttons
+                if (self.leftButtons.count == 0) {
+                    return;
+                }
                 // Complete the pan to the right
                 if (currentX > [self leftButtonsTotalWidth]) {
                     newXOffset = self.topContentView.frame.size.width;

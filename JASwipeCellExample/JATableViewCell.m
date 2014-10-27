@@ -29,6 +29,7 @@
 
 @interface JATableViewCell ()
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic) BOOL constraintsSetup;
 @end
 @implementation JATableViewCell
 
@@ -45,6 +46,7 @@
     if (!_titleLabel) {
         _titleLabel = [UILabel newAutoLayoutView];
         _titleLabel.numberOfLines = 0;
+        _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     }
     return _titleLabel;
 }
@@ -53,9 +55,13 @@
 {
     [super updateConstraints];
     
-    [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeft withInset:10];
-    [self.titleLabel autoAlignAxisToSuperviewAxis:ALAxisVertical];
-    [self.titleLabel autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
+    if (!self.constraintsSetup) {
+        [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeTop withInset:10];
+        [self.titleLabel autoPinEdgeToSuperviewEdge:ALEdgeLeading withInset:10];
+        [self.titleLabel autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.topContentView withMultiplier:0.9];
+        
+        self.constraintsSetup = YES;
+    }
 }
 
 - (void)configureCellWithTitle:(NSString *)title
