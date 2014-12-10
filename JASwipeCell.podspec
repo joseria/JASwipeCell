@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.author             = { "Jose Alvarez" => "jose.a.alvarez@gmail.com" }
   s.social_media_url   = "http://twitter.com/joseaalvarez"
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/joseria/JASwipeCell.git", :tag => '1.0.1' }
+  s.source       = { :git => "https://github.com/joseria/JASwipeCell.git", :tag => "1.0.1" }
   s.source_files  = 'JASwipeCell'
   s.requires_arc = true
 end
