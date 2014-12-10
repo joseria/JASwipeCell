@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "JASwipeCell"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A UITableViewCell subclass that simulates IOS 8 mail's swipe cells."
 
   s.description  = <<-DESC
