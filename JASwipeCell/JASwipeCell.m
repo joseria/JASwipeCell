@@ -344,6 +344,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
         case UIGestureRecognizerStateChanged: {
             CGFloat currentX = [recognizer translationInView:self].x;
             CGFloat newXOffset = self.startingPoint.x + currentX;
+	    CGFloat deltaWidth = 0.0;
             
             // When starting from a closed state.
             if (self.startingPoint.x == 0) {
@@ -380,6 +381,12 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                         [self handlePanningButtons:newXOffset swipeDirection:JASwipeDirectionLeft];
                     }
                 }
+		// Calculate the top view width adjustment because of accessory buttons
+		if( self.contentView.frame.size.width < self.frame.size.width ) {
+		    deltaWidth = self.frame.size.width - self.contentView.frame.size.width;
+		    if( -newXOffset < deltaWidth )
+			deltaWidth = -newXOffset;
+		}
             }
             // Swiping to the right
             else if (self.swipingRight) {
@@ -408,13 +415,14 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 }
             }
             
-            self.topContentView.frame = CGRectMake(newXOffset, self.startingPoint.y, CGRectGetWidth(self.topContentView.frame), CGRectGetHeight(self.topContentView.frame));
+            self.topContentView.frame = CGRectMake(newXOffset, self.startingPoint.y, CGRectGetWidth(self.contentView.frame)+deltaWidth, CGRectGetHeight(self.topContentView.frame));
         }
             break;
         case UIGestureRecognizerStateEnded:
         {
             CGFloat currentX = self.topContentView.frame.origin.x;
             CGFloat newXOffset = 0.0;
+	    CGFloat deltaWidth = 0.0;
             
             if (self.swipingLeft) {
                 // Exit if we don't have any right buttons
@@ -434,6 +442,10 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 // Open to reveal right buttons
                 else if (fabs(currentX) == [self rightButtonsTotalWidth] || fabs(currentX) > [self rightButtonsTotalWidth]/2) {
                     newXOffset = -[self rightButtonsTotalWidth];
+		    // Set the top view width adjustment because of accessory buttons
+		    if( self.contentView.frame.size.width < self.frame.size.width ) {
+			deltaWidth = self.frame.size.width - self.contentView.frame.size.width;
+		    }
                     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         [self revealButtonsWithTopViewWithOffset:newXOffset swipeDirection:JASwipeDirectionLeft];
                     } completion:nil];
@@ -483,7 +495,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
             }
            
             [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                self.topContentView.frame = CGRectMake(newXOffset, self.topContentView.frame.origin.y, CGRectGetWidth(self.topContentView.frame), CGRectGetHeight(self.topContentView.frame));
+                self.topContentView.frame = CGRectMake(newXOffset, self.topContentView.frame.origin.y, CGRectGetWidth(self.contentView.frame)+deltaWidth, CGRectGetHeight(self.topContentView.frame));
             } completion:nil];
             
             break;
