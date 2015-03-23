@@ -1,6 +1,9 @@
 JASwipeCell
 ===========
 
+[![Build Status](https://travis-ci.org/joseria/JASwipeCell.svg?branch=master)](https://travis-ci.org/joseria/JASwipeCell)
+[![CocoaPods](https://img.shields.io/cocoapods/v/JASwipeCell.svg)](http://cocoapods.org/?q=JASwipeCell)
+
 ##Overview
 
 An iOS 8 Mail Inspired. A UITableViewCell subclass that displays customizable left or right buttons that are revealed as the user swipes the cell in either direction. The edge-most buttons will pin to the container view and will execute an event similar to how the delete/archive button work in IOS 8 mail.

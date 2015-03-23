@@ -1,0 +1,3 @@
+language: objective-c
+script:
+  - xctool -project JASwipeCellExample.xcodeproj -scheme JASwipeCellExample -sdk iphonesimulator clean build
