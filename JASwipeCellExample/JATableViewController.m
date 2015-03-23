@@ -61,9 +61,11 @@
                                           @"Swipe right all they way",
                                           @"Swipe left - click More button",
                                           @"Swipe left - click Flag button",
+                                          /* TODO: solve for accessory types.
                                           @"Swipe left - click Flag button",
                                           @"Swipe left - click Flag button",
                                           @"Swipe left - click Flag button",
+                                           */
                                           @"Swipe left - click Archive button",
                                           @"Swipe right - click Mark as unread button",
                                           @"Swipe right - click Delete button"]];
@@ -133,6 +135,7 @@
     [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
 
+    /* TODO: solve for accessory types.
     switch ( indexPath.row % 5 ) {
 	case 0:
 	default:
@@ -150,7 +153,7 @@
 	case 4:
 		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 		break;
-    }
+    }*/
 
     return cell;
 }
