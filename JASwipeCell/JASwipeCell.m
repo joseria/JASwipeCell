@@ -112,6 +112,8 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
     for (UIButton *button in _leftButtons.reverseObjectEnumerator) {
         NSAssert([button isMemberOfClass:[JAActionButton class]], @"This cell expects JAActionButton class buttons");
         [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+	// Make sure the buttons will not be visible before their frames are set...
+	button.frame = CGRectMake( 5000, 0, button.frame.size.width, button.frame.size.height );
         [self.contentView addSubview:button];
     }
 }
@@ -131,6 +133,8 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
     for (UIButton *button in _rightButtons.reverseObjectEnumerator) {
         NSAssert([button isMemberOfClass:[JAActionButton class]], @"This cell expects JAActionButton class buttons");
         [button addTarget:self action:@selector(buttonTapped:) forControlEvents:UIControlEventTouchUpInside];
+	// Make sure the buttons will not be visible before their frames are set...
+	button.frame = CGRectMake( 5000, 0, button.frame.size.width, button.frame.size.height );
         [self.contentView addSubview:button];
     }
 }
@@ -155,13 +159,14 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
             // pin to the topView.
             if (i == 0) {
                 CGRect button1Frame = self.contentView.frame;
-                button1Frame.origin.x = - self.contentView.frame.size.width;
+                button1Frame.size.width = self.frame.size.width;
+		button1Frame.origin.x = - self.frame.size.width;
                 lButton.frame = button1Frame;
                 [lButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight];
                 // Add right padding to the button title
                 [lButton setTitleEdgeInsets:UIEdgeInsetsMake(0, 0, 0, kButtonTitlePadding)];
             } else {
-                lButton.frame = CGRectMake(-self.leftButtonWidth , 0, self.leftButtonWidth, self.contentView.frame.size.height);
+                lButton.frame = CGRectMake(-self.leftButtonWidth, 0, self.leftButtonWidth, self.contentView.frame.size.height);
             }
         }
         
@@ -172,13 +177,14 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
             // pin to the topView.
             if (i == 0) {
                 CGRect button1Frame = self.contentView.frame;
-                button1Frame.origin.x = self.contentView.frame.size.width;
+		button1Frame.size.width = self.frame.size.width;
+		button1Frame.origin.x = self.frame.size.width;
                 rButton.frame = button1Frame;
                 [rButton setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
                 // Add right padding to the button title
                 [rButton setTitleEdgeInsets:UIEdgeInsetsMake(0, kButtonTitlePadding, 0, 0)];
             } else {
-                rButton.frame = CGRectMake(self.contentView.frame.size.width, 0, self.rightButtonWidth, self.contentView.frame.size.height);
+		rButton.frame = CGRectMake(self.frame.size.width, 0, self.rightButtonWidth, self.contentView.frame.size.height);
             }
         }
         
@@ -278,7 +284,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
 
 - (void)completePinToTopViewAnimation
 {
-    CGFloat newXOffset = self.rightButtonsRevealed ? -self.topContentView.frame.size.width : self.topContentView.frame.size.width;
+    CGFloat newXOffset = self.rightButtonsRevealed ? -self.frame.size.width : self.frame.size.width;
     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         [self pinButtonToTopViewWithOffset:newXOffset swipeDirection:self.rightButtonsRevealed ? JASwipeDirectionLeft : JASwipeDirectionRight];
         self.topContentView.frame = CGRectMake(newXOffset, self.topContentView.frame.origin.y, CGRectGetWidth(self.topContentView.frame), CGRectGetHeight(self.topContentView.frame));
@@ -338,6 +344,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
         case UIGestureRecognizerStateChanged: {
             CGFloat currentX = [recognizer translationInView:self].x;
             CGFloat newXOffset = self.startingPoint.x + currentX;
+	    CGFloat deltaWidth = 0.0;
             
             // When starting from a closed state.
             if (self.startingPoint.x == 0) {
@@ -374,6 +381,12 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                         [self handlePanningButtons:newXOffset swipeDirection:JASwipeDirectionLeft];
                     }
                 }
+		// Calculate the top view width adjustment because of accessory buttons
+		if( self.contentView.frame.size.width < self.frame.size.width ) {
+		    deltaWidth = self.frame.size.width - self.contentView.frame.size.width;
+		    if( -newXOffset < deltaWidth )
+			deltaWidth = -newXOffset;
+		}
             }
             // Swiping to the right
             else if (self.swipingRight) {
@@ -402,13 +415,14 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 }
             }
             
-            self.topContentView.frame = CGRectMake(newXOffset, self.startingPoint.y, CGRectGetWidth(self.topContentView.frame), CGRectGetHeight(self.topContentView.frame));
+            self.topContentView.frame = CGRectMake(newXOffset, self.startingPoint.y, CGRectGetWidth(self.contentView.frame)+deltaWidth, CGRectGetHeight(self.topContentView.frame));
         }
             break;
         case UIGestureRecognizerStateEnded:
         {
             CGFloat currentX = self.topContentView.frame.origin.x;
             CGFloat newXOffset = 0.0;
+	    CGFloat deltaWidth = 0.0;
             
             if (self.swipingLeft) {
                 // Exit if we don't have any right buttons
@@ -417,7 +431,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 }
                 // Complete the swipe to the left
                 if (fabs(currentX) > [self rightButtonsTotalWidth]) {
-                    newXOffset = -self.topContentView.frame.size.width;
+                    newXOffset = -self.frame.size.width;
                     [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         [self pinButtonToTopViewWithOffset:newXOffset swipeDirection:JASwipeDirectionLeft];
                     } completion:^(BOOL finished) {
@@ -428,6 +442,10 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 // Open to reveal right buttons
                 else if (fabs(currentX) == [self rightButtonsTotalWidth] || fabs(currentX) > [self rightButtonsTotalWidth]/2) {
                     newXOffset = -[self rightButtonsTotalWidth];
+		    // Set the top view width adjustment because of accessory buttons
+		    if( self.contentView.frame.size.width < self.frame.size.width ) {
+			deltaWidth = self.frame.size.width - self.contentView.frame.size.width;
+		    }
                     [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         [self revealButtonsWithTopViewWithOffset:newXOffset swipeDirection:JASwipeDirectionLeft];
                     } completion:nil];
@@ -450,7 +468,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                 }
                 // Complete the pan to the right
                 if (currentX > [self leftButtonsTotalWidth]) {
-                    newXOffset = self.topContentView.frame.size.width;
+                    newXOffset = self.frame.size.width;
                     [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         [self pinButtonToTopViewWithOffset:newXOffset swipeDirection:JASwipeDirectionRight];
                     } completion:^(BOOL finished) {
@@ -477,7 +495,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
             }
            
             [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-                self.topContentView.frame = CGRectMake(newXOffset, self.topContentView.frame.origin.y, CGRectGetWidth(self.topContentView.frame), CGRectGetHeight(self.topContentView.frame));
+                self.topContentView.frame = CGRectMake(newXOffset, self.topContentView.frame.origin.y, CGRectGetWidth(self.contentView.frame)+deltaWidth, CGRectGetHeight(self.topContentView.frame));
             } completion:nil];
             
             break;

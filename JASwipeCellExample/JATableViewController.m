@@ -61,6 +61,9 @@
                                           @"Swipe right all they way",
                                           @"Swipe left - click More button",
                                           @"Swipe left - click Flag button",
+                                          @"Swipe left - click Flag button",
+                                          @"Swipe left - click Flag button",
+                                          @"Swipe left - click Flag button",
                                           @"Swipe left - click Archive button",
                                           @"Swipe right - click Mark as unread button",
                                           @"Swipe right - click Delete button"]];
@@ -129,7 +132,26 @@
     [cell setNeedsLayout];
     [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
-    
+
+    switch ( indexPath.row % 5 ) {
+	case 0:
+	default:
+		cell.accessoryType = UITableViewCellAccessoryNone;
+		break;
+	case 1:
+		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+		break;
+	case 2:
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+		break;
+	case 3:
+		cell.accessoryType = UITableViewCellAccessoryDetailButton;
+		break;
+	case 4:
+		cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+		break;
+    }
+
     return cell;
 }
 
