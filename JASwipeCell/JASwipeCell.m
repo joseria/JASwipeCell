@@ -80,6 +80,12 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
     return self;
 }
 
+- (void) awakeFromNib
+{
+    [super awakeFromNib];
+    [self initialize];
+}
+
 - (void)initialize
 {
     [self addSubview:self.topContentView];
