@@ -441,7 +441,9 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                     [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         [self pinButtonToTopViewWithOffset:newXOffset swipeDirection:JASwipeDirectionLeft];
                     } completion:^(BOOL finished) {
-                        [self.delegate rightMostButtonSwipeCompleted:self];
+                        if ([self.delegate respondsToSelector:@selector(rightMostButtonSwipeCompleted:)]) {
+                            [self.delegate rightMostButtonSwipeCompleted:self];
+                        }
                     }];
                     self.rightButtonsRevealed = NO;
                 }
@@ -478,7 +480,9 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
                     [UIView animateWithDuration:0.1 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
                         [self pinButtonToTopViewWithOffset:newXOffset swipeDirection:JASwipeDirectionRight];
                     } completion:^(BOOL finished) {
-                        [self.delegate leftMostButtonSwipeCompleted:self];
+                        if ([self.delegate respondsToSelector:@selector(leftMostButtonSwipeCompleted:)]) {
+                            [self.delegate leftMostButtonSwipeCompleted:self];
+                        }
                     }];
                     self.leftButtonsRevealed = NO;
                 }
