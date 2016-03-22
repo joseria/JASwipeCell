@@ -26,7 +26,7 @@
 #import "JASwipeCell.h"
 #import "JAActionButton.h"
 
-#define kButtonTitlePadding     5.0
+static CGFloat const kButtonTitlePadding = 5.0f;
 
 // Determines the direction that the user is swiping
 typedef NS_ENUM(NSUInteger, JASwipeDirection) {
@@ -202,12 +202,12 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
     }
 }
 
-- (void)addActionButtons:(NSArray *)actionButtons withButtonPosition:(JAButtonLocation)buttonPosition
+- (void)addActionButtons:(NSArray <JAActionButton *>*)actionButtons withButtonPosition:(JAButtonLocation)buttonPosition
 {
     [self addActionButtons:actionButtons withButtonWidth:kJAButtonWidth withButtonPosition:buttonPosition];
 }
 
-- (void)addActionButtons:(NSArray *)actionButtons withButtonWidth:(CGFloat)width withButtonPosition:(JAButtonLocation)buttonPosition
+- (void)addActionButtons:(NSArray <JAActionButton *>*)actionButtons withButtonWidth:(CGFloat)width withButtonPosition:(JAButtonLocation)buttonPosition
 {
     if (buttonPosition == JAButtonLocationLeft) {
         self.leftButtons = actionButtons;

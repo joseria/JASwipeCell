@@ -36,6 +36,7 @@ typedef NS_OPTIONS(NSUInteger, JAButtonLocation) {
 };
 
 @class JASwipeCell;
+@class JAActionButton;
 
 @protocol JASwipeCellDelegate <NSObject>
 // Called when the left most button has swiped all the way to the right.
@@ -68,7 +69,7 @@ typedef NS_OPTIONS(NSUInteger, JAButtonLocation) {
  @param actionButtons The action buttons that will be located underneath the top view.
  @param buttonPosition Where the buttons will be located (JAButtonLocationLeft or JAButtonLocationRight).
  */
-- (void)addActionButtons:(NSArray *)actionButtons withButtonPosition:(JAButtonLocation)buttonPosition;
+- (void)addActionButtons:(NSArray <JAActionButton *>*)actionButtons withButtonPosition:(JAButtonLocation)buttonPosition;
 
 /**
  Adds action buttons to the cell at the specified location.
@@ -77,7 +78,7 @@ typedef NS_OPTIONS(NSUInteger, JAButtonLocation) {
  @param width Width of the buttons.
  @param buttonLocation Where the buttons will be located (JAButtonLocationLeft or JAButtonLocationRight).
  */
-- (void)addActionButtons:(NSArray *)actionButtons withButtonWidth:(CGFloat)width withButtonPosition:(JAButtonLocation)buttonPosition;
+- (void)addActionButtons:(NSArray <JAActionButton *>*)actionButtons withButtonWidth:(CGFloat)width withButtonPosition:(JAButtonLocation)buttonPosition;
 
 /**
  Resets the top container view and buttons back to their original state.
