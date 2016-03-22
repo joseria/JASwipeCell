@@ -35,7 +35,7 @@
 
 - (instancetype)initActionButtonWithTitle:(NSString *)title color:(UIColor *)color handler:(JAActionButtonHandler)handler
 {
-    self = [super init];
+    self = [super initWithFrame:CGRectZero];
     if (self) {
         _title = title;
         _color = color;

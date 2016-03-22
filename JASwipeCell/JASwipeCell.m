@@ -91,7 +91,7 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
 - (UIView *)topContentView
 {
     if (!_topContentView) {
-        _topContentView = [[UIView alloc] init];
+        _topContentView = [[UIView alloc] initWithFrame:CGRectZero];
         _topContentView.backgroundColor = [UIColor whiteColor];
     }
     return _topContentView;
