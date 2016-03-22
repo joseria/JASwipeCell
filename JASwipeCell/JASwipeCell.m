@@ -80,6 +80,15 @@ typedef NS_ENUM(NSUInteger, JASwipeDirection) {
     return self;
 }
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self initialize];
+    }
+    return self;
+}
+
 - (void)initialize
 {
     [self addSubview:self.topContentView];
